@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Galéria</title>
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+</head>
+
+<body>
+    <div class="container-all">
+        <h1>Fotogaléria</h1>
+        <h2>Kategórie</h2>
+        <div class="category-box">
+            <div class="box-img">
+                <img src="picture/nature.jpeg" alt="">
+            </div>
+            <div class="box-text">
+                <h4>Priroda</h4>
+            </div>
+            <div class="number-foto">
+                <p>10 fotiek</p>
+            </div>
+        </div>
+        <div class="category-box">
+            <div class="box-img">
+                <a href="galeria.html"><img src="picture/architektura.jpg" alt=""></a>
+            </div>
+            <div class="box-text">
+                <h4>Architektúra</h4>
+            </div>
+            <div class="number-foto">
+                <p>5 fotiek</p>
+            </div>
+        </div>
+        <div class="category-box">
+            <div class="box-img">
+                <img src="picture/ludia.jpeg" alt="">
+            </div>
+            <div class="box-text">
+                <h4>Ľudia</h4>
+            </div>
+            <div class="number-foto">
+                <p>2 fotky</p>
+            </div>
+        </div>
+        <div class="category-box">
+            <div class="box-img">
+                <img src="picture/jedlo.jpeg" alt="">
+            </div>
+            <div class="box-text">
+                <h4>Jedlo</h4>
+            </div>
+            <div class="number-foto">
+                <p>10 fotiek</p>
+            </div>
+        </div>
+        <div class="category-box">
+            <div class="box-img">
+                <img src="picture/abstraktne.jpeg" alt="">
+            </div>
+            <div class="box-text">
+                <h4>Abstrakné</h4>
+            </div>
+            <div class="number-foto">
+                <p>10 fotiek</p>
+            </div>
+        </div>
+
+        <div class="category-box" >
+            <div class="add-category" onclick="document.getElementById('id01').style.display='block'">
+                <img src="icons/add.svg">
+                <h3>Pridať kategóriu</h3>
+            </div>
+        </div>
+        
+        <div id="id01" class="w3-modal">
+                <div class="add-box">
+                    <h2>Pridať kategóriu</h2>
+                    <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-xlarge w3-display-topright" title="Close Modal">&times;</span>
+                    <label>Nazov kategórie</label>
+                    <input type="text">
+                    <button>Pridať</button>
+                </div>
+            
+          </div>
+
+
+    </div>
+</body>
+
+</html>

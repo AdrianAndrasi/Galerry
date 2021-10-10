@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Galéria</title>
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container-all">
+        <h1>Fotogaléria</h1>
+        <h3>
+            <a href="index.html"><img src="icons/arrow-left.svg" alt=""> Architektúra</a>
+        </h3>
+        <div class="gallery-box">
+            <img src="picture/architektura1.jpeg" alt="" onclick="document.getElementById('modal01').style.display='block'" class="w3-hover-opacity">
+        </div>
+        <div id="modal01" class="w3-modal w3-animate-zoom" onclick="this.style.display='none'">
+            <img class="w3-modal-content" src="picture/architektura1.jpeg">
+          </div>
+        <div class="gallery-box">
+            <img src="picture/architektura2.jpeg" alt="">
+        </div>
+        <div class="gallery-box">
+            <img src="picture/architektura3.jpeg" alt="">
+        </div>
+        <div class="gallery-box">
+            <img src="picture/architektura4.jpeg" alt="">
+        </div>
+        <div class="gallery-box">
+            <img src="picture/architektura5.jpeg" alt="">
+        </div>
+        <div class="category-box" >
+            <div class="add-category" onclick="document.getElementById('id01').style.display='block'">
+                <img src="icons/add.svg">
+                <h3>Pridať kategóriu</h3>
+            </div>
+        </div>
+        <div id="id01" class="w3-modal">
+            <div class="add-foto">
+                <h2>Pridať fotku</h2>
+                <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-xlarge w3-display-topright" title="Close Modal">&times;</span>
+                <div class="add-picture">
+                    <img src="icons/picture.svg">
+                    <p>sem presun fotky</p>
+                    <p>alebo</p>
+                    <button>Vyberte subory</button>
+                </div>
+                <button>Pridať</button>
+            </div>
+        
+      </div>
+        
+        
+
+
+    </div>
+</body>
+
+</html>
